@@ -7,7 +7,7 @@ Hello! I'm João Cunha, a bioinformatics scientist with a robust foundation in c
 ## Key Projects
 
 ### 1. [DIB Pipeline: Drosophila Inversion Breakpoints Analysis](https://github.com/JoaoTomasMotaCunha/My_Portfolio/tree/main/drosophila-inversion-breakpoints)
-- **Role**: MSc Thesis Project at I3S (Institute for Research and Innovation in Health)
+- **Role**: MSc Student in Phenotypic Evolution Research Group
 - **Skills**: Bash, Docker, Git, Linux System Administration, Data Analytics
 - **Overview**: Developed a comprehensive bioinformatics workflow using Bash and Docker to analyze genomic inversion breakpoints in _Drosophila_ genomes. The pipeline processed raw genomic data, conducted breakpoint validation using BLASTn, and contributed to understanding genetic variation in fruit flies.
 - **Impact**: Streamlined analysis for researchers working on evolutionary genomics, providing a robust and adaptable tool for specific genetic studies.
