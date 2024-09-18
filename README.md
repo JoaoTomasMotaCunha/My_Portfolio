@@ -19,7 +19,7 @@ Hello! I'm João Cunha, a bioinformatics scientist with a robust foundation in c
 - **Impact**: Demonstrated the effectiveness of AI in agriculture, helping farmers optimize resource use and improve orchard management.
 
 ### 3. [Personalized Prediction of Hypoglycemia Events](https://github.com/JoaoTomasMotaCunha/My_Portfolio/tree/main/hypoglycemia-prediction)
-- **Role**: Bachelor's Final Project
+- **Role**: Research Assistant (UBI)
 - **Skills**: Python, Machine Learning, Healthcare Informatics, Model Development
 - **Overview**: Developed a personalized machine learning model to predict hypoglycemia events in diabetic patients. Implemented algorithms like Random Forest, Gradient Boosting, and Deep Neural Networks using patient data (glucose levels, diet, insulin dosage, etc.).
 - **Impact**: Provided a tool for healthcare professionals to intervene early and offer personalized patient care, advancing predictive analytics in diabetes management.
