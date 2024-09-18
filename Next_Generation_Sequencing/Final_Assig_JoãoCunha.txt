@@ -1,0 +1,153 @@
+# Final Assignment - Next Generation Sequencing (NGS)
+# João Cunha, nº202103227
+
+# Step 1: Create a working directory and navigate into it
+mkdir assig3
+cd assig3
+
+# Step 2: Download the reference genome and the BED file
+# Download the reference genome in FASTA format
+wget http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+
+# Copy the BED file from the provided location
+cp /home/lucia.pardal/files_bed/file_4.bed .
+
+# Step 3: Download SRA sequences manually
+# Use fastq-dump to download and decompress SRA sequences into FASTQ files
+fastq-dump --split-3 --gzip SRR2125267
+fastq-dump --split-3 --gzip SRR2125268
+fastq-dump --split-3 --gzip SRR2125272
+fastq-dump --split-3 --gzip SRR2125297
+
+# Step 4: Prepare the reference genome
+# Unzip the downloaded reference genome
+gunzip hg38.fa.gz
+
+# Index the reference genome to enable alignment
+bwa index hg38.fa
+
+# Step 5: Map the SRA sequences to the reference genome and create SAM files
+# Align sequences and create SAM files for each SRA number
+bwa mem -t3 hg38.fa SRR2125267_1.fastq.gz SRR2125267_2.fastq.gz > SRR2125267.sam
+bwa mem -t3 hg38.fa SRR2125268_1.fastq.gz SRR2125268_2.fastq.gz > SRR2125268.sam
+bwa mem -t3 hg38.fa SRR2125272_1.fastq.gz SRR2125272_2.fastq.gz > SRR2125272.sam
+bwa mem -t3 hg38.fa SRR2125297_1.fastq.gz SRR2125297_2.fastq.gz > SRR2125297.sam
+
+# Step 6: Process SAM files to BAM files
+# For each SAM file, convert to BAM, sort, fix mates, mark duplicates, and index
+
+# Script for SRR2125267
+nano file_67.sh
+-----------------------
+# Convert SAM to BAM with BED file filtering
+samtools view -@3 -Sb -L file_4.bed SRR2125267.sam > SRR2125267.bam
+
+# Sort BAM file by read names
+samtools sort -@3 -n -o SRR2125267_sortednames.bam -O BAM SRR2125267.bam
+
+# Fix mate information in BAM file
+samtools fixmate -@3 -m SRR2125267_sortednames.bam SRR2125267_fixmate.bam
+
+# Sort BAM file by chromosomal coordinates
+samtools sort -@3 -o SRR2125267_chrsort.bam SRR2125267_fixmate.bam
+
+# Index the sorted BAM file
+samtools index -@3 SRR2125267_chrsort.bam
+
+# Mark and remove duplicate reads
+samtools markdup -@3 -r -s SRR2125267_chrsort.bam SRR2125267_final.bam
+-----------------------
+# Make the script executable and run it
+chmod a+x file_67.sh
+./file_67.sh
+
+# Repeat the above steps for other SRA files by creating and executing corresponding scripts:
+# file_68.sh, file_72.sh, file_97.sh
+
+# Script for SRR2125268
+nano file_68.sh
+-----------------------
+# Convert SAM to BAM with BED file filtering
+samtools view -@3 -Sb -L file_4.bed SRR2125268.sam > SRR2125268.bam
+
+# Sort BAM file by read names
+samtools sort -@3 -n -o SRR2125268_sortednames.bam -O BAM SRR2125268.bam
+
+# Fix mate information in BAM file
+samtools fixmate -@3 -m SRR2125268_sortednames.bam SRR2125268_fixmate.bam
+
+# Sort BAM file by chromosomal coordinates
+samtools sort -@3 -o SRR2125268_chrsort.bam SRR2125268_fixmate.bam
+
+# Index the sorted BAM file
+samtools index -@3 SRR2125268_chrsort.bam
+
+# Mark and remove duplicate reads
+samtools markdup -@3 -r -s SRR2125268_chrsort.bam SRR2125268_final.bam
+-----------------------
+# Make the script executable and run it
+chmod a+x file_68.sh
+./file_68.sh
+
+# Script for SRR2125272
+nano file_72.sh
+-----------------------
+# Convert SAM to BAM with BED file filtering
+samtools view -@3 -Sb -L file_4.bed SRR2125272.sam > SRR2125272.bam
+
+# Sort BAM file by read names
+samtools sort -@3 -n -o SRR2125272_sortednames.bam -O BAM SRR2125272.bam
+
+# Fix mate information in BAM file
+samtools fixmate -@3 -m SRR2125272_sortednames.bam SRR2125272_fixmate.bam
+
+# Sort BAM file by chromosomal coordinates
+samtools sort -@3 -o SRR2125272_chrsort.bam SRR2125272_fixmate.bam
+
+# Index the sorted BAM file
+samtools index -@3 SRR2125272_chrsort.bam
+
+# Mark and remove duplicate reads
+samtools markdup -@3 -r -s SRR2125272_chrsort.bam SRR2125272_final.bam
+-----------------------
+# Make the script executable and run it
+chmod a+x file_72.sh
+./file_72.sh
+
+# Script for SRR2125297
+nano file_97.sh
+-----------------------
+# Convert SAM to BAM with BED file filtering
+samtools view -@3 -Sb -L file_4.bed SRR2125297.sam > SRR2125297.bam
+
+# Sort BAM file by read names
+samtools sort -@3 -n -o SRR2125297_sortednames.bam -O BAM SRR2125297.bam
+
+# Fix mate information in BAM file
+samtools fixmate -@3 -m SRR2125297_sortednames.bam SRR2125297_fixmate.bam
+
+# Sort BAM file by chromosomal coordinates
+samtools sort -@3 -o SRR2125297_chrsort.bam SRR2125297_fixmate.bam
+
+# Index the sorted BAM file
+samtools index -@3 SRR2125297_chrsort.bam
+
+# Mark and remove duplicate reads
+samtools markdup -@3 -r -s SRR2125297_chrsort.bam SRR2125297_final.bam
+-----------------------
+# Make the script executable and run it
+chmod a+x file_97.sh
+./file_97.sh
+
+# Step 7: Call Variants
+# Generate variant calls from BAM files and filter for quality
+samtools mpileup -uf hg38.fa *_final.bam | bcftools call -mv > beforefilt.vcf
+bcftools filter -s LowQual -e '%QUAL<20 || DP>100' beforefilt.vcf > final.vcf
+
+# Step 8: Apply MAF Filter
+# Filter VCF file to include only variants with a Minor Allele Frequency (MAF) ≥ 0.05
+vcftools --vcf final.vcf --maf 0.05 --out analysis_maf --recode
+
+# Step 9: Cleanup
+# Remove unnecessary SAM files
+rm *.sam
