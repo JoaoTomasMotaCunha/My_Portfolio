@@ -6,19 +6,19 @@ Hello! I'm João Cunha, a bioinformatics scientist with a robust foundation in c
 
 ## Key Projects
 
-### 1. [DIB Pipeline: Drosophila Inversion Breakpoints Analysis](https://github.com/JoaoTomasMotaCunha/DIB-Pipeline)
+### 1. [DIB Pipeline: Drosophila Inversion Breakpoints Analysis](https://github.com/JoaoTomasMotaCunha/My_Portfolio/tree/main/drosophila-inversion-breakpoints)
 - **Role**: MSc Thesis Project at I3S (Institute for Research and Innovation in Health)
 - **Skills**: Bash, Docker, Git, Linux System Administration, Data Analytics
 - **Overview**: Developed a comprehensive bioinformatics workflow using Bash and Docker to analyze genomic inversion breakpoints in _Drosophila_ genomes. The pipeline processed raw genomic data, conducted breakpoint validation using BLASTn, and contributed to understanding genetic variation in fruit flies.
 - **Impact**: Streamlined analysis for researchers working on evolutionary genomics, providing a robust and adaptable tool for specific genetic studies.
 
-### 2. [Peach Tree Orchard Health Prediction](https://github.com/JoaoTomasMotaCunha/peach-tree-orchard-prediction)
+### 2. [Peach Tree Orchard Health Prediction](https://github.com/JoaoTomasMotaCunha/My_Portfolio/tree/main/peach-tree-orchard-prediction)
 - **Role**: Research Assistant (UBI)
 - **Skills**: Python, Convolutional Neural Networks, Data Analytics, Image Processing
 - **Overview**: Processed multispectral images captured by drones to predict the health and vigor of peach trees using Python and CNNs. Calculated vegetation indices like NDVI and employed the Faster R-CNN model for accurate canopy segmentation.
 - **Impact**: Demonstrated the effectiveness of AI in agriculture, helping farmers optimize resource use and improve orchard management.
 
-### 3. [Personalized Prediction of Hypoglycemia Events](https://github.com/JoaoTomasMotaCunha/hypoglycemia-prediction)
+### 3. [Personalized Prediction of Hypoglycemia Events](https://github.com/JoaoTomasMotaCunha/My_Portfolio/tree/main/hypoglycemia-prediction)
 - **Role**: Bachelor's Final Project
 - **Skills**: Python, Machine Learning, Healthcare Informatics, Model Development
 - **Overview**: Developed a personalized machine learning model to predict hypoglycemia events in diabetic patients. Implemented algorithms like Random Forest, Gradient Boosting, and Deep Neural Networks using patient data (glucose levels, diet, insulin dosage, etc.).
