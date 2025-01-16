@@ -33,10 +33,15 @@ Hello! I'm João Cunha, a Bioinformatician with a robust foundation in computati
 
 ## Education and Certifications
 
+- **Python for Data Science and Machine Learning Bootcamp** (*2024–Present*)  
+  *Udemy Academy* – Focused on data analysis, machine learning algorithms, and applied Python programming.  
+- **AWS Certified Machine Learning – Specialty** (*2024–Present*)  
+  *Udemy Academy* – Comprehensive training in the development and deployment of machine learning models on AWS.  
+
 - **Master's in Bioinformatics and Computational Biology** (2021–2023)  
-  Faculty of Sciences, University of Porto
+  Faculty of Sciences, University of Porto  
 - **Bachelor's in Biomedical Sciences** (2018–2021)  
-  University of Beira Interior (UBI)
+  University of Beira Interior (UBI)  
 - **English Online Course Level B2**  
   Successfully concluded, at Now Club, the 18-hour Now Club English Online Course Level B2 according to the Common European Framework of Reference (CEFR).
 
