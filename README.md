@@ -42,7 +42,7 @@ Hello! I'm João Cunha, a Bioinformatician with a robust foundation in computati
   Faculty of Sciences, University of Porto  
 - **Bachelor's in Biomedical Sciences** (2018–2021)  
   University of Beira Interior (UBI)  
-- **English Online Course Level B2**  
+- **English Online Course Level B2** (March 2019 – June 2019)  
   Successfully concluded, at Now Club, the 18-hour Now Club English Online Course Level B2 according to the Common European Framework of Reference (CEFR).
 
 
