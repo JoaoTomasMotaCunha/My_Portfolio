@@ -2,7 +2,7 @@
 
 ## Welcome to My Portfolio
 
-Hello! I'm João Cunha, a bioinformatics scientist with a robust foundation in computational biology and data science. I specialize in analyzing complex biological datasets, developing bioinformatics workflows, and creating predictive models using AI and machine learning. My expertise spans several programming languages, including Python, R, SQL, and Bash, as well as tools like Docker and Git. Through hands-on research in genomics and health informatics, I've contributed to advancements in predictive modeling, genome analysis, and agricultural decision-making.
+Hello! I'm João Cunha, a Bioinformatician with a robust foundation in computational biology and data science. I specialize in analyzing complex biological datasets, developing bioinformatics workflows, and creating predictive models using AI and machine learning. My expertise spans several programming languages, including Python, R, SQL, and Bash, as well as tools like Docker and Git. Through hands-on research in genomics and health informatics, I've contributed to advancements in predictive modeling, genome analysis, and agricultural decision-making.
 
 ## Key Projects
 
