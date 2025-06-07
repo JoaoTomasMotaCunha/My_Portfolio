@@ -33,9 +33,9 @@ Hello! I'm João Cunha, a Bioinformatician with a robust foundation in computati
 
 ## Education and Certifications
 
-- **Python for Data Science and Machine Learning Bootcamp** (*2024–Present*)  
+- **Python for Data Science and Machine Learning Bootcamp** (*December 2024 - March 2025*)  
   *Udemy Academy* – Focused on data analysis, machine learning algorithms, and applied Python programming.  
-- **AWS Certified Machine Learning – Specialty** (*2024–Present*)  
+- **AWS Certified Machine Learning – Specialty** (*March 2025–Present*)  
   *Udemy Academy* – Comprehensive training in the development and deployment of machine learning models on AWS.  
 
 - **Master's in Bioinformatics and Computational Biology** (2021–2023)  
